@@ -4,7 +4,7 @@
 
 ### Configuring the Simulator
 
-A modified version of the DonkeyCar simulator is required to run our experiments. Our modified simulator can be found [here](https://github.com/Trustworthy-Engineered-Autonomy-Lab/donkey-unity-sim).
+A modified version of the DonkeyCar simulator is required to run our experiments. Our modified simulator can be found in `donkey-unity-sim/`.
 
 We have modified the simulator to:
 - Add pausing functionality
