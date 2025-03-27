@@ -15,7 +15,7 @@ Unity is required to compile the simulator into an executable.
 
 ### Generating Training Data
 
-For convenience, we have provided training data for the Mini Monaco track [here](), but you can also use the simulator to generate your own training data. To generate training data:
+For convenience, we have provided training data for the Mini Monaco track [here](https://drive.google.com/file/d/1ELOOfoIUBec0A96yCGF_VcWhhc84u43G/view?usp=sharing), but you can also use the simulator to generate your own training data. To generate training data:
 - Install our modified version of the `donkeycar` package using `pip install ./donkeycar`.
 - Run the simualtor by running `python manage.py drive`.
     - You will need to tweak the `DONKEY_SIM_PATH` variable in `myconfig.py` file to have the correct simulator path.
