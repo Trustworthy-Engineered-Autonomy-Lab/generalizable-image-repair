@@ -1,0 +1,9 @@
+[submodule "pytorch-CycleGAN-and-pix2pix"]
+	path = pytorch-CycleGAN-and-pix2pix
+	url = https://github.com/Trustworthy-Engineered-Autonomy-Lab/pytorch-CycleGAN-and-pix2pix.git
+[submodule "donkey-unity-sim"]
+	path = donkey-unity-sim
+	url = https://github.com/Trustworthy-Engineered-Autonomy-Lab/donkey-unity-sim.git
+[submodule "donkeycar"]
+	path = donkeycar
+	url = https://github.com/Trustworthy-Engineered-Autonomy-Lab/donkeycar.git
