@@ -47,7 +47,7 @@ Then, create the image dataset. To do so, create a folder in the `datasets/` fol
 
 where `trainA` is the set of corrupted images, `trainB` contains paired uncorrupted images with the same file names as those in `trainA`, and `testA` contains test corrupted images.
 
-To make an aligned (paired) dataset, duplicate `testA` to `testB`. Then, run the provided `make_dataset_aligned.py` file. If all goes well, `train` and `test` folders will be created consisting of paired observations.
+To make an aligned (paired) dataset, duplicate `testA` to `testB`. Then, run the provided `make_dataset_aligned.py` file. If all goes well, `train` and `test` folders will be created, consisting of paired observations.
 
 If you wish to use the controller loss, you must also create a `controls/` folder alongside the others, which contains the corresponding `.catalog` files that contain the control actions. The final directory structure should look as follows:
 - `datasets/`
@@ -78,7 +78,7 @@ where:
 - `<controller_path>` is the path to the onnx controller.
 - `model` is the model type (either plain CycleGAN or with controller loss).
 - `dataset_mode` is the dataset mode (should correspond to the previous two model types).
-- `<checkpoints_dir>` is the directory you want to save the model training checkpoints.
+- `<checkpoints_dir>` is the directory where you want to save the model training checkpoints.
 
 Out of the saved models, the one to use for restoring images is `*_net_G_A.pth`.
 
@@ -91,10 +91,10 @@ python train.py --dataroot <dataset path> --name <name> --controller_path <contr
 where:
 - `<dataset path>` is the path to the previously created dataset.
 - `<name>` is what you want to name the current training run.
-- `<controller_path>` is the pssath to the onnx controller (only required if using the controller loss).
+- `<controller_path>` is the path to the onnx controller (only required if using the controller loss).
 - `model` is the model type (either plain pix2pix or with controller loss).
 - `dataset_mode` is the dataset mode (should correspond to the previous two model types).
-- `<checkpoints_dir>` is the directory you want to save the model training checkpoints.
+- `<checkpoints_dir>` is the directory where you want to save the model training checkpoints.
 
 Out of the saved models, the one to use for restoring images is `*_net_G.pth`.
 
